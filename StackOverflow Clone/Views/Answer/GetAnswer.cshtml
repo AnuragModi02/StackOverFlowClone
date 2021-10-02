@@ -1,0 +1,117 @@
+﻿@model List<BuissnessLayer.Models.Answer>
+
+@{
+    ViewBag.Title = "GetAnswer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var QuestionId = Model[0].Question.Id;
+}
+
+<div class="AnswerHeader">
+    <div class="firstDiv">
+        <div class="QuestionAsked">@Model[0].Question.Questions.</div>
+        <div class="primary">Ask Question</div>
+    </div>
+    <div class="secondDiv">
+        <span class="Label">Asked</span>
+        <span> @DateTime.Now.ToShortDateString()</span>
+        <span class="Label">Active</span>
+        <span>Today</span>
+        <span class="Label">Viewed</span>
+        <span>21421</span>
+    </div>
+</div>
+
+<div class="QuestionSection">
+    <div class="Votes">
+        <button class="Button" onclick="location.href='@Url.Action("IncreaseVote", "Question",new { id=Model[0].Question.Id})'"><i class="fas fa-angle-up fa-3x"></i></button>
+        <span class="VotesCount">@Model[0].Question.Votes</span>
+        <button class="Button" onclick="location.href='@Url.Action("DecreaseVote", "Question",new { id=Model[0].Question.Id})'"><i class="fas fa-angle-down fa-3x"></i></button>
+    </div>
+    <div class="QuestionArea">
+        <div class="Question">
+            <p class="Description">@Model[0].Question.Description</p>
+        </div>
+        <div class="tags">
+            @foreach (var tag in Model[0].Question.Tags)
+            {
+                <div class="tag">@tag.TagName</div>
+            }
+        </div>
+        <div class="QuestionSectionFooter">
+            <div class="FooterLabels">
+                <span class="Label">share</span>
+                <span class="Label">Improve this question</span>
+                <span class="Label">Follow</span>
+            </div>
+            <div class="User">
+                <span class="time"> Asked 5 mins ago</span>
+                <div class="user-details">
+                    <img class="user-img" src="~/Content/photo.jpg" />
+                    <div class="user-name">@Model[0].User.Name</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="AnswerSection">
+    <div class="TotalAnswersSection">
+        <div class="TotalAnswer">
+            @Model.Count Answer
+        </div>
+        <div class="threebuttons">
+            <button>Active</button>
+            <button>Oldest</button>
+            <button>Votes</button>
+        </div>
+    </div>
+    @foreach (var answer in Model)
+    {
+        <div class="Answer">
+            <div class="Votes">
+                <button class="Button" onclick="location.href='@Url.Action("IncreaseVote", "Answer", new { id = answer.Id })'"><i class="fas fa-angle-up fa-3x"></i></button>
+                <span class="VotesCount">@answer.Votes</span>
+                <button class="Button" onclick="location.href='@Url.Action("DecreaseVote", "Answer", new { id = answer.Id })'"><i class="fas fa-angle-down fa-3x"></i></button>
+            </div>
+            <div class="DisplayAnswer">
+                <p class="AnswerPara">@answer.Answers</p>
+                <div class="QuestionSectionFooter">
+                    <div class="FooterLabels">
+                        <span class="Label">share</span>
+                        <span class="Label">Improve this question</span>
+                        <span class="Label">Follow</span>
+                    </div>
+                    <div class="User">
+                        <span class="time"> Asked 5 mins ago</span>
+                        <div class="user-details">
+                            <img class="user-img" src="~/Content/photo.jpg" />
+                            <div class="user-name">@Model[0].User.Name</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="YourAnswerArea">
+            <div>
+                <p class="YourAnswerText">Your Answer</p>
+            </div>
+            <div class="YourAnswer">
+                <textarea class="TextAreaForAnswer" style="resize:none"></textarea>
+            </div>
+            <button type="submit" class="primary YourAnswerButton" onclick="postAnswer()" data-request-url="@Url.RouteUrl(new { action = "AddAnswer", controller = "Answer" })" data-questionId="@QuestionId">Post Your Answer</button>
+        </div>
+    }
+
+</div>
+
+@section Style{
+    @Styles.Render("~/Content/GetAnswer.css")
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+}
+@section Script{
+
+    @Scripts.Render("~/Content/YourAnswer.js")    
+}

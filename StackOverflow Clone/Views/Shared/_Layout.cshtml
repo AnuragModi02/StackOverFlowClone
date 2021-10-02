@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <div class="Layout">
+        <div class="navigationBar">
+            <ul class="navul">
+                <li><img src="~/Content/download.png" class="logo"></li>
+                <li>About</li>
+                <li>Product</li>
+                <li>Teams</li>
+                <li style="flex-grow:1">@Html.TextBox("Search", null, new { placeholder = "Search...", @class = "search" })</li>
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <li class="loginsignup">
+                        <Button class="login" onclick="@("window.location.href='" + @Url.Action("Login", "Account") + "'");">Log in</Button>
+                        <Button class="signup" onclick="@("window.location.href='" + @Url.Action("Register", "Account") + "'");">Register</Button>
+                    </li>
+                }
+                <li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="loginUser">Welcome, @User.Identity.Name</div>
+                    }
+                </li>
+                <li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <Button class="signOut" onclick="@("window.location.href='" + @Url.Action("SignOut", "Account") + "'");">Sign Out</Button>
+                    }
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="leftnav">
+                <ul class="menu">
+                    <li class="@(ViewBag.Current == "Home" ? "active" : "" )">@Html.ActionLink("Home", "Index", "Home", null, new { style = "text-decoration:None; color:black" })</li>
+                    <li class="submenu">
+                        <span style="font-size:.9rem">PUBLIC</span>
+                        <ul class="submenuli">
+                            <li id="question" class="@((ViewBag.Current == "Question" || ViewBag.Current =="Answer") ? "submenu-child active" : "submenu-child" )">@Html.ActionLink("Questions", "GetQuestions", "Question", null, new { style = "text-decoration:None; color:black" })</li>
+                            <li id="tags" class="submenu-child">Tags</li>
+                            <li id="users" class="submenu-child">Users</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="childrens">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+<head>
+    @Scripts.Render("~/Content/Layout.js")
+    @RenderSection("Style", required: false)
+    @RenderSection("Script", required: false)
+    <link href="@Url.Content("~/Content/Layout.css")" rel="stylesheet" type="text/css">
+</head>
+</html>
+

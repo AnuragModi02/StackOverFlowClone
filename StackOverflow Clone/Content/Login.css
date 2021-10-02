@@ -1,0 +1,138 @@
+﻿.LoginSection {
+    display: flex;
+    height: 100vh;
+    flex-direction:column;
+    background-color: #e6e6e6;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.LoginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 50%;
+}
+
+.Username {
+    display: flex;
+    padding: 20px 20px 0px 20px;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 1rem;
+}
+
+.Password {
+    display: flex;
+    padding: 0px 20px 0px 20px;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 4px;
+}
+
+.Loginnn {
+    color: white;
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.Loginnn button {
+    background-color: #0a95ff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: skyblue;
+    }
+
+.Loginn {
+    display: flex;
+    gap: 12px;
+}
+
+.GoogleLogin {
+    background-color: white;
+    width: 70%;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+
+}
+
+.GoogleLogin p {
+    margin: 0px;
+    padding: 10px;
+}
+
+
+.GitHubLogin {
+    background-color: black;
+    width: 70%;
+    border-radius: 5px;
+     color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+    }
+
+.GitHubLogin p {
+    margin: 0px;
+    padding: 10px;
+}
+
+.FacebookLogin {
+    background-color: #385499;
+    width: 70%;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+    .FacebookLogin p {
+        margin: 0px;
+        padding: 10px;
+    }
+
+.LoginChild {
+    flex-grow: 1;
+}
+
+.Form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 8px;
+    gap:20px;
+}
+
+.Loginnn Button:hover {
+    cursor: pointer;
+}
+
+.LoginToCreateQuestion {
+    width: 50%;
+    height: 15%;
+    border: 2px solid yellow;
+    background-color: #fdf7e2;
+    border-color: #ddb422;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.LoginToCreateQuestion p {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.loginorsignuptoseequestion{
+    font-size:1rem;
+    font-family:sans-serif;
+}
+

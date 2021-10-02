@@ -1,0 +1,74 @@
+﻿@model IEnumerable<BuissnessLayer.Models.Question>
+
+@{
+    ViewBag.Title = "GetQuestions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="Header">
+    <div class="sub-header">
+        <h1>All Questions</h1>
+        <button class="primary"  onclick="@("window.location.href='" + @Url.Action("CreateQuestion", "Question") + "'");">Ask Question</button>
+    </div>
+    <div class="header-footer">
+        <div style="align-self:center"><span class="TotalQuestions">@ViewBag.TotalQuestions questions</span></div>
+        <div class="footer-buttons">
+            <div>
+                <button>Newest</button>
+                <button>Active</button>
+                <button>Bountied</button>
+                <button>Unanswered</button>
+                <button>More</button>
+            </div>
+            <div>
+                <button class="Filter">Filter</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="MainQuestionare">
+    @foreach (var question in Model)
+    {
+        <div class="ListOfQuestions">
+            <div class="VotesAndAnswersCount">
+                <div class="Votes">
+                    <div class="votesCount">@question.Votes</div>
+                    <div class="votesSpan">Votes</div>
+                </div>
+                <div class="Answers">
+                    <div class="AnswersCount">@question.Answers.Count</div>
+                    <div class="AnswerSpan">Answers</div>
+                </div>
+            </div>
+            <div class="Question-container">
+                @if (question.Answers.Count > 0)
+                {
+                <div class="Question">@Html.ActionLink(@question.Questions, "GetAnswer", "Answer", new { question.Id }, new { @class = "NoDecor", style = "text-decoration:None" })</div>
+                }
+                else
+                {
+                    <div class="Question">@question.Questions</div>
+                }
+                <div class="Description">@question.Description</div>
+                <div class="Tags">
+                    @foreach (var tag in question.Tags)
+                    {
+                        <span class="tag">@tag.TagName</span>
+                    }
+                </div>
+                <div class="User">
+                    <div class="Userbox">
+                        <span class="time"> Asked 5 mins ago</span>
+                        <div class="user-details">
+                            <img class="user-img" src="~/Content/photo.jpg" />
+                            <div class="user-name">@question.User.Name</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Style{
+    @Styles.Render("~/Content/GetQuestion.css")
+}

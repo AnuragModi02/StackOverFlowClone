@@ -1,0 +1,52 @@
+﻿@model BuissnessLayer.ViewModels.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="LoginSection">
+    @if ((ViewBag.CreateQuestion == true) && (User.Identity.IsAuthenticated == false))
+    {
+        <div class="LoginToCreateQuestion">
+            <div><p>You must be logged in to ask a question on Stack Overflow</p></div>
+            <div class="loginorsignuptoseequestion">Log in below or <span style="color:#0074cc">sign up</span></div>
+        </div>
+    }
+    <div class="LoginForm">
+        <div class="GoogleLogin">
+            <p>Log in with Google</p>
+        </div>
+        <div class="GitHubLogin">
+            <p>Log in with GitHub</p>
+        </div>
+        <div class="FacebookLogin">
+            <p>Log in with Facebook</p>
+        </div>
+        @using (@Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "Form" }))
+        {
+            <div class="Username">
+                @Html.LabelFor(x => x.UserName, new { @style = "color:#0c0d0e; font-family: ui-sans-serif; font-weight:bold" })
+                @Html.TextBoxFor(x => x.UserName, new { @style = "border-radius: 5px;height: 35px;" })
+                @Html.ValidationMessageFor(x => x.UserName, null, new { @style = "color:red" })
+            </div>
+
+            <div class="Password">
+                @Html.LabelFor(x => x.Password, new { @style = "color:#0c0d0e; font-family: ui-sans-serif; font-weight:bold" })
+                @Html.TextBoxFor(x => x.Password, new { @style = "border-radius: 5px;height: 35px;" })
+                @Html.ValidationMessageFor(x => x.Password, null, new { @style = "color:red" })
+            </div>
+
+            <div class="Loginnn">
+                <button>Log in</button>
+            </div>
+        }
+    </div>
+</div>
+
+@section Style{
+    @Styles.Render("~/Content/Login.css")
+}
+
+
+

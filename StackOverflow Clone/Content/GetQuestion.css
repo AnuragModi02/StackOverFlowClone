@@ -1,0 +1,145 @@
+﻿
+.Questions li{
+    padding:5px;
+    font-size:1rem;
+    list-style-type:none;
+}
+.ListOfQuestions {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 20px;
+    padding-top: 15px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+    padding-left:1.5rem;
+}
+.Question-container {
+    display:flex;
+    flex-direction:column;
+    flex: 1;
+    gap:8px;
+}
+.VotesAndAnswersCount {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    font-size: 1rem;
+    color: #6a737c;
+}
+.Question {
+    font-size: 1.5rem;
+    color: #0074cc;
+}
+.Answers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Votes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.votesCount, .votesSpan, .AnswersCount, .AnswerSpan {
+    align-self: center;
+    font-size:.9rem;
+}
+.Description {
+    font-size: .91rem;
+    line-height: 1.4;
+    font-family: sans-serif;
+}
+.Tags{
+    display:flex;
+    justify-content:flex-start;
+    gap:5px;
+}
+.tag {
+    display: block;
+    background-color: #e1ecf4;
+    font-size: .9rem;
+    padding: 4px;
+    border-radius: 5px;
+    padding-top: 4px;
+    color: #39729a;
+}
+.User {
+    display: flex;
+}
+.user-img {
+    height: 40px;
+    width: 40px;
+}
+.user-name {
+    color: #0074cc;
+    font-size: medium;
+    align-self: center;
+    font-family: system-ui;
+}
+.user-details {
+    display: flex;
+    gap: 5px;
+}
+.time {
+    color:#6a737c;
+}
+.primary {
+    padding: .8em;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: #0a95ff;
+    outline: none;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.15384615;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Header{
+    display:flex;
+    flex-direction:column;
+    padding:15px;
+    padding-left:1.5rem;
+}
+.sub-header{
+    display:flex;
+    justify-content:space-between;
+}
+.Filter {
+    display: block;
+    background-color: #e1ecf4;
+    font-size: .9rem;
+    border-radius: 5px;
+    color: #39729a;
+}
+.header-footer{
+    display:flex;
+    justify-content:space-between;
+    padding-top:16px;
+}
+.footer-buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:18px;
+}
+
+.header-footer button {
+    font-size: .8rem;
+    padding: 9px;
+    color: #39729a;
+}
+.TotalQuestions{
+    font-size:1.3rem;
+}
+.Userbox {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 600px;
+}

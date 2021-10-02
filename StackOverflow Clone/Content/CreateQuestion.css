@@ -1,0 +1,129 @@
+﻿.QuestionDiv {
+    border-radius: 4px;
+    width: 80%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    border: 1px solid grey;
+    gap: 8px;
+    padding: 10px;
+    box-shadow: 0px 0px 4px 0px #000000a3;
+}
+
+.TitleDiv{
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+    gap:4px;
+}
+
+.Title{
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.Title-description {
+    font-size: medium;
+    color: gray;
+}
+
+.BodyDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 4px;
+}
+
+.Body {
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.Body-description {
+    font-size: medium;
+    color:gray;
+}
+
+.TagsDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 4px;
+}
+
+.Tags {
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.Tags-description {
+    font-size: medium;
+    color: gray;
+}
+
+p{
+    margin:0px;
+    padding:0px;
+}
+
+.Submit {
+    background-color: #0a95ff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: skyblue;
+    align-self: start;
+}
+.CreateQuestionForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left:150px;
+    justify-content:center;
+    height:100%;
+}
+.Submit:hover{
+    cursor:pointer;
+}
+.TagsSuggestion{
+    display:flex;
+    gap:4px;
+    display:none;
+}
+.tag-sugg {
+    padding: 10px;
+    font-size: 12px;
+    display: inline-block;
+    background-color: #abcfea;
+    color: #0b74c3;
+    border-radius: 5px;
+}
+.tag-sugg:hover{
+   cursor:pointer;
+}
+.input-tag {
+    padding: 10px;
+    font-size: 12px;
+    display: inline-block;
+    background-color: #abcfea;
+    color: #0b74c3;
+    border-radius: 5px;
+    margin: 2px;
+    display: flex;
+    display: none;
+    gap: 4px;
+    align-items: center;
+}
+.hiddenTags {
+    display: flex;
+    border: 1px solid gray;
+    gap: 2px;
+}
+.Ask{
+    font-size:large;
+    font-family:sans-serif;
+}
+.closetag:hover{
+    cursor:pointer;
+    transform:scale(1.5);
+}

@@ -1,0 +1,63 @@
+﻿@model BuissnessLayer.ViewModels.QuestionViewModel
+
+@{
+    ViewBag.Title = "CreateQuestion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (@Html.BeginForm("CreateQuestion", "Question", FormMethod.Post, new { @class = "CreateQuestionForm" }))
+{
+    <div class="Ask">Ask a Question</div>
+    <div class="QuestionDiv">
+        <div class="TitleDiv">
+            <p class="Title">Title</p>
+            <p class="Title-description">Be specific and imagine you’re asking a question to another person</p>
+            <div class="Title-input">
+                @Html.TextBoxFor(x => x.Title, new { placeholder = "e.g Is there an R function for finding the index of an element in a vector?", style = "width: 100%; padding:5px; box-sizing: border-box;" })
+                @Html.ValidationMessageFor(x => x.Title, null, new { style = "display: block; font-size: small; margin-top: 5px; color: red;" })
+                @*<input type="text" name="title" placeholder="e.g Is there an R function for finding the index of an element in a vector" />*@
+            </div>
+        </div>
+
+        <div class="BodyDiv">
+            <p class="Body">Body</p>
+            <p class="Body-description">Include all the information someone would need to answer your question</p>
+            <div class="Body-input">
+                @Html.TextAreaFor(x => x.Question, new { style = "width: 100%; height: 200px; box-sizing:border-box;" })
+                @Html.ValidationMessageFor(x => x.Question, null, new { style = "display: block; font-size: small; margin-top: 5px; color: red;" })
+            </div>
+        </div>
+
+        <div class="TagsDiv">
+            <p class="Tags">Tags</p>
+            <p class="Tags-description">Add up to 5 tags to describe what your question is about</p>
+            <div class="Tags-input">
+                <div class="hiddenTags">
+                    <span class="input-tag c#" id="C#">C# <i class="fas fa-times closetag"></i></span>
+                    <span class="input-tag html" id="HTML">HTML <i class="fas fa-times closetag"></i></span>
+                    <span class="input-tag css" id="CSS">CSS <i class="fas fa-times closetag"></i></span>
+                    <span class="input-tag js" id="JS">JavaScript <i class="fas fa-times closetag"></i></span>
+                    @Html.TextBoxFor(x => x.Tags, new { style = "width: 100%; box-sizing:border-box; border:none; padding:5px; outline:none; margin:2px;", @class = "TagInput" ,@autocomplete = "off"})
+                </div>
+            </div>
+            <div class="TagsSuggestion">
+                <span class="tag-sugg">C#</span>
+                <span class="tag-sugg">HTML</span>
+                <span class="tag-sugg">CSS</span>
+                <span class="tag-sugg">JavaScript</span>
+            </div>
+        </div>
+    </div>
+
+    <button class="Submit">Submit</button>
+}
+
+@section Style{
+    @Styles.Render("~/Content/CreateQuestion.css")
+}
+
+@section Script{
+    @Scripts.Render("~/Content/CreateQuestion.js")
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+}
+
