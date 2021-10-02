@@ -1,4 +1,4 @@
-﻿using BuissnessLayer.Models;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +6,11 @@ using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
 using BuissnessLayer.ViewModels;
+using BuissnessLayer;
+using BuissnessLayer.Models;
+using BuissnessLayer.IdentityModels;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.AspNet.Identity;
 
 namespace StackOverflow_Clone.Controllers
 {
@@ -27,7 +32,7 @@ namespace StackOverflow_Clone.Controllers
 
             foreach(Question question in questions)
             {
-                _context.Questions.Include(x => x.User).ToList();
+                _context.Questions.Include(x => x.Appuser).ToList();
                 _context.Questions.Include(x => x.Tags).ToList();
                 _context.Questions.Include(x => x.Answers).ToList();
             }
@@ -72,7 +77,9 @@ namespace StackOverflow_Clone.Controllers
         [HttpPost]
         public ActionResult CreateQuestion(QuestionViewModel model)
         {
-            if(ModelState.IsValid)
+            var userManager = HttpContext.GetOwinContext().GetUserManager<AppUserManager>();
+
+            if (ModelState.IsValid)
             {
                 Question question = new Question();
 
@@ -81,10 +88,7 @@ namespace StackOverflow_Clone.Controllers
 
                 question.Tags = CreateTags(model.Tags);
 
-                question.User = new User()
-                {
-                    Name = User.Identity.Name,
-                };
+                question.Appuser = userManager.FindByName(User.Identity.Name);
 
                 _context.Questions.Add(question);
                 _context.SaveChanges();

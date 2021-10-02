@@ -1,11 +1,15 @@
-﻿using BuissnessLayer.Models;
-using System;
+﻿
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
 using BuissnessLayer.ViewModels;
+using BuissnessLayer;
+using BuissnessLayer.Models;
+using Microsoft.AspNet.Identity.Owin;
+using BuissnessLayer.IdentityModels;
+using Microsoft.AspNet.Identity;
 
 namespace StackOverflow_Clone.Controllers
 {
@@ -22,16 +26,16 @@ namespace StackOverflow_Clone.Controllers
         [Route("Answer/{Id}")]
         public ActionResult GetAnswer(int Id)
         {
-            List<Question> question = _context.Questions.Where(x => x.Id == Id).Include(x => x.Tags).Include(x => x.User).ToList();
+            List<Question> question = _context.Questions.Where(x => x.Id == Id).Include(x => x.Tags).Include(x => x.Appuser).ToList();
 
-            List<Answer> Answers = _context.Answers.Where(x => x.Question.Id == Id).ToList();
+            List<Answer> Answers = _context.Answers.Where(x => x.Question.Id == Id).Include(x=>x.Appuser).ToList();
 
             // Append question to the first answer for the retrieval
-            Answers[0].Question.Questions = question[0].Questions;
-            Answers[0].Question.Votes = question[0].Votes;
-            Answers[0].Question.Description = question[0].Description;
-            Answers[0].Question.Tags = question[0].Tags;
-            Answers[0].Question.User = question[0].User;
+            //Answers[0].Question.Questions = question[0].Questions;
+            //Answers[0].Question.Votes = question[0].Votes;
+            //Answers[0].Question.Description = question[0].Description;
+            //Answers[0].Question.Tags = question[0].Tags;
+            //Answers[0].Question.User = question[0].User;
 
             return View(Answers);
         }
@@ -40,16 +44,14 @@ namespace StackOverflow_Clone.Controllers
         [Route("Answer")]
         public void AddAnswer(AnswerForSpecificQuestionViewModel value)
         {
+            var userManager = HttpContext.GetOwinContext().GetUserManager<AppUserManager>();
+
             Question question = _context.Questions.Where(x => x.Id == value.QuestionId).Include(x => x.Answers).FirstOrDefault();
             Answer answer = new Answer()
             {
                 Answers = value.Answer,
-                // User = _context.Users.FirstOrDefault(x => x.Name == User.Identity.Name),
-                User = new User()
-                {
-                    Name = User.Identity.Name,
-                }
-            };
+                Appuser = _context.Users.FirstOrDefault(x => x.UserName == User.Identity.Name)
+        };
             question.Answers.Add(answer);
             _context.SaveChanges();
         }

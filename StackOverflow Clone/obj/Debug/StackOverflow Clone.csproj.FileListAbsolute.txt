@@ -1,16 +1,3 @@
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow Clone.csprojAssemblyReference.cache
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.IntialMigration.resources
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedUserModel.resources
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedQuestionAndAnswerModel.resources
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.RemovedDuplicateFK.resources
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedUserReferenceToQuestionAndAnswer.resources
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.RemovedOneToManyRelBetweenUserAndQA.resources
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedVotesToQA.resources
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedDescriptionFieldToQuestion.resources
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedTagRefToQuestion.resources
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedIdentityModels.resources
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow Clone.csproj.GenerateResource.cache
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow Clone.csproj.CoreCompileInputs.cache
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\StackOverflow Clone.dll.config
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\StackOverflow Clone.dll
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\StackOverflow Clone.pdb
@@ -64,7 +51,6 @@ C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\roslyn\v
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\roslyn\VBCSCompiler.exe
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\Antlr3.Runtime.dll
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\BuissnessLayer.dll
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\EntityFramework.dll
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\EntityFramework.SqlServer.dll
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\Microsoft.AspNet.Identity.Core.dll
@@ -90,7 +76,6 @@ C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\System.W
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\System.Web.WebPages.dll
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\System.Web.WebPages.Razor.dll
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\WebGrease.dll
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\BuissnessLayer.pdb
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\EntityFramework.xml
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\EntityFramework.SqlServer.xml
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\Microsoft.AspNet.Identity.Core.xml
@@ -114,7 +99,25 @@ C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\System.N
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\System.Web.Http.xml
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\System.Web.Http.WebHost.xml
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow Clone.csprojAssemblyReference.cache
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.IntialMigration.resources
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedUserModel.resources
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedQuestionAndAnswerModel.resources
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.RemovedDuplicateFK.resources
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedUserReferenceToQuestionAndAnswer.resources
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.RemovedOneToManyRelBetweenUserAndQA.resources
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedVotesToQA.resources
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedDescriptionFieldToQuestion.resources
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedTagRefToQuestion.resources
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedIdentityModels.resources
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.RemovedValidationFromUserModel.resources
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow Clone.csproj.GenerateResource.cache
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow Clone.csproj.CoreCompileInputs.cache
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow Clone.csproj.CopyComplete
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow Clone.dll
 C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow Clone.pdb
-C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.RemovedValidationFromUserModel.resources
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\BuissnessLayerr.dll
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\BuissnessLayerr.pdb
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\bin\BuissnessLayerr.dll.config
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.AddedAppUserToQAA.resources
+C:\Users\anura\source\repos\StackOverflow Clone\StackOverflow Clone\obj\Debug\StackOverflow_Clone.Migrations.RemovedUserModel.resources

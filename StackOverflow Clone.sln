@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOverflow Clone", "StackOverflow Clone\StackOverflow Clone.csproj", "{DD6B97C7-AFA7-496F-AAFE-4654E17050AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuissnessLayer", "BuissnessLayer\BuissnessLayer.csproj", "{440E0100-D17D-47B0-A7B6-BDDFCAC84272}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuissnessLayer", "BuissnessLayerr\BuissnessLayer.csproj", "{42617B67-FA3D-4186-A87A-7EA533A4F5A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{DD6B97C7-AFA7-496F-AAFE-4654E17050AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD6B97C7-AFA7-496F-AAFE-4654E17050AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD6B97C7-AFA7-496F-AAFE-4654E17050AD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{440E0100-D17D-47B0-A7B6-BDDFCAC84272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{440E0100-D17D-47B0-A7B6-BDDFCAC84272}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{440E0100-D17D-47B0-A7B6-BDDFCAC84272}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{440E0100-D17D-47B0-A7B6-BDDFCAC84272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42617B67-FA3D-4186-A87A-7EA533A4F5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42617B67-FA3D-4186-A87A-7EA533A4F5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42617B67-FA3D-4186-A87A-7EA533A4F5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42617B67-FA3D-4186-A87A-7EA533A4F5A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

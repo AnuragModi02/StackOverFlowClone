@@ -17,7 +17,9 @@ function postAnswer() {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(AnswerForQuestion),
-    })
-        .then(response => console.log(response.json()))
+    }).then(function (response) {
+        console.log(response.json())
+            window.location.reload()
+        })
        .catch(error => console.log('error = ',error))
 }

@@ -1,0 +1,8 @@
+C:\Users\anura\source\repos\StackOverflow Clone\Common\bin\Debug\netstandard2.0\Common.deps.json
+C:\Users\anura\source\repos\StackOverflow Clone\Common\bin\Debug\netstandard2.0\Common.dll
+C:\Users\anura\source\repos\StackOverflow Clone\Common\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\anura\source\repos\StackOverflow Clone\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+C:\Users\anura\source\repos\StackOverflow Clone\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+C:\Users\anura\source\repos\StackOverflow Clone\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\anura\source\repos\StackOverflow Clone\Common\obj\Debug\netstandard2.0\Common.dll
+C:\Users\anura\source\repos\StackOverflow Clone\Common\obj\Debug\netstandard2.0\Common.pdb

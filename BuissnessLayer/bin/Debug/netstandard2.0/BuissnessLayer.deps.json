@@ -9,7 +9,6 @@
     ".NETStandard,Version=v2.0/": {
       "BuissnessLayer/1.0.0": {
         "dependencies": {
-          "EntityFramework": "6.4.4",
           "Microsoft.AspNet.Identity.EntityFramework": "2.2.3",
           "Microsoft.AspNet.Identity.Owin": "2.2.3",
           "Microsoft.Owin.Host.SystemWeb": "4.2.0",
@@ -21,7 +20,18 @@
           "BuissnessLayer.dll": {}
         }
       },
-      "EntityFramework/6.4.4": {},
+      "EntityFramework/6.1.0": {
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.30225.0"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.30225.0"
+          }
+        }
+      },
       "Microsoft.AspNet.Identity.Core/2.2.3": {
         "runtime": {
           "lib/net45/Microsoft.AspNet.Identity.Core.dll": {
@@ -32,7 +42,7 @@
       },
       "Microsoft.AspNet.Identity.EntityFramework/2.2.3": {
         "dependencies": {
-          "EntityFramework": "6.4.4",
+          "EntityFramework": "6.1.0",
           "Microsoft.AspNet.Identity.Core": "2.2.3"
         },
         "runtime": {
@@ -180,12 +190,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "EntityFramework/6.4.4": {
+    "EntityFramework/6.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
-      "path": "entityframework/6.4.4",
-      "hashPath": "entityframework.6.4.4.nupkg.sha512"
+      "sha512": "sha512-u/M0OEfqxTUsL5BwzD66eBGm278/ozqdLK3JvMO6QwUxxc+z7ZUkTYm4suDhWRqzkc6mOhvXDQY5dZUwbldxyQ==",
+      "path": "entityframework/6.1.0",
+      "hashPath": "entityframework.6.1.0.nupkg.sha512"
     },
     "Microsoft.AspNet.Identity.Core/2.2.3": {
       "type": "package",

@@ -120,11 +120,13 @@
     color: #0074cc;
     font-size: 1.1rem;
     align-self:center;
+    flex-grow:1;
 }
 
 .user-details {
     display: flex;
     gap: 5px;
+    width:100%;
 }
 
 .FooterLabels {

@@ -9,8 +9,6 @@ C:\Users\anura\source\repos\StackOverflow Clone\BuissnessLayer\bin\Debug\netstan
 C:\Users\anura\source\repos\StackOverflow Clone\BuissnessLayer\bin\Debug\netstandard2.0\System.Security.xml
 C:\Users\anura\source\repos\StackOverflow Clone\BuissnessLayer\obj\Debug\netstandard2.0\BuissnessLayer.AssemblyInfoInputs.cache
 C:\Users\anura\source\repos\StackOverflow Clone\BuissnessLayer\obj\Debug\netstandard2.0\BuissnessLayer.AssemblyInfo.cs
-C:\Users\anura\source\repos\StackOverflow Clone\BuissnessLayer\obj\Debug\netstandard2.0\BuissnessLayer.csproj.CoreCompileInputs.cache
 C:\Users\anura\source\repos\StackOverflow Clone\BuissnessLayer\obj\Debug\netstandard2.0\BuissnessLayer.csproj.CopyComplete
 C:\Users\anura\source\repos\StackOverflow Clone\BuissnessLayer\obj\Debug\netstandard2.0\BuissnessLayer.dll
 C:\Users\anura\source\repos\StackOverflow Clone\BuissnessLayer\obj\Debug\netstandard2.0\BuissnessLayer.pdb
-C:\Users\anura\source\repos\StackOverflow Clone\BuissnessLayer\obj\Debug\netstandard2.0\BuissnessLayer.csprojAssemblyReference.cache
